@@ -203,19 +203,4 @@ class File:
         return result
 
 
-# Example usage:
-fs = FileSystem()
-fs.mkdir("documents")
-fs.cd("documents")
-fs.touch("file1.txt")
-fs.echo('I am "Finding" difficult to write this to file', "file1.txt")
-print(fs.ls())  # Output: ['file1.txt']
-print(fs.cat("file1.txt"))  # Output: 'I am "Finding" difficult to write this to file'
-fs.cd("..")
-print(fs.ls())  # Output: ['documents']
-fs.cp("documents/file1.txt", "file2.txt")
-print(fs.ls())  # Output: ['documents', 'file2.txt']
-fs.cd("documents")
-print(fs.ls())  # Output: ['file1.txt', 'file2.txt']
-fs.rm("file1.txt")
-print(fs.ls())  # Output: ['file2.txt']
+
